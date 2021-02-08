@@ -27,7 +27,7 @@ namespace API3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<APIContext>(opt =>
-opt.UseInMemoryDatabase("TodoList"));
+            opt.UseInMemoryDatabase("TodoList"));
             services.AddControllers();
             services.AddSwaggerGen();
         }

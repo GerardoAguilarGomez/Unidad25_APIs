@@ -52,7 +52,6 @@ namespace API2
                         .WithMany(e => e.Empleados)
                         .HasForeignKey(d => d.CodigoDepartamento)
                         .OnDelete(DeleteBehavior.ClientSetNull);
-
             });
         }
         }
